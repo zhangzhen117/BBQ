@@ -1,0 +1,7 @@
+# full-size originals kept locally by tools/resize_photos.py --keep-originals
+photos/**/originals/
+*.HEIC
+*.heic
+.DS_Store
+Thumbs.db
+__pycache__/
