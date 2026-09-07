@@ -176,6 +176,7 @@ a { color: var(--flame-dark); }
   background: rgba(20, 12, 8, .94);
   display: flex; align-items: center; justify-content: center;
 }
+.lightbox[hidden] { display: none; }
 .lb-figure { margin: 0; max-width: 92vw; max-height: 92vh; text-align: center; }
 .lb-figure img { max-width: 92vw; max-height: 84vh; object-fit: contain; margin: 0 auto; border-radius: 6px; }
 .lb-figure figcaption { color: #ccc; font-size: .85rem; margin-top: 10px; }
