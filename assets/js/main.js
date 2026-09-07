@@ -13,6 +13,8 @@
   const fmtTime = (d) => d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const icsStamp = (d) => d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate()) + "T" + pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + "00Z";
+  const people = (ev) => (ev.attendees && ev.attendees.length)
+    ? `<p class="people"><span class="people-label">Who came:</span> ${ev.attendees.map((n) => `<span class="chip">${esc(n)}</span>`).join("")}</p>` : "";
   const endOf = (ev) => ev.end ? parse(ev.end) : new Date(parse(ev.start).getTime() + 4 * 3600 * 1000);
 
   function googleCalUrl(ev) {
@@ -74,6 +76,7 @@
           <li><span class="ico">📍</span><span>${ev.mapUrl ? `<a href="${esc(ev.mapUrl)}" target="_blank" rel="noopener">${esc(ev.location)}</a>` : esc(ev.location)}</span></li>
         </ul>
         ${ev.notes ? `<p class="notes">${esc(ev.notes)}</p>` : ""}
+        ${people(ev)}
         <div class="countdown" id="countdown"></div>
         <div class="actions">
           <button class="btn btn-primary" id="btn-ics">📆 Add to calendar (.ics)</button>
@@ -124,6 +127,7 @@
         </div>
         <p class="event-loc">📍 ${ev.mapUrl ? `<a href="${esc(ev.mapUrl)}" target="_blank" rel="noopener">${esc(ev.location)}</a>` : esc(ev.location)}</p>
         ${ev.notes ? `<p class="event-notes">${esc(ev.notes)}</p>` : ""}
+        ${people(ev)}
         ${photos.length ? `<div class="gallery">${tiles}</div>` : '<p class="no-photos">No photos uploaded yet.</p>'}
       </article>`;
     }).join("");

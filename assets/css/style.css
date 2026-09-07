@@ -162,6 +162,14 @@ a { color: var(--flame-dark); }
 .tile:focus-visible { outline: 3px solid var(--flame); outline-offset: 2px; }
 .no-photos { color: var(--muted); font-style: italic; }
 
+/* ---------- Attendees ---------- */
+.people { margin: 0 0 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.people-label { color: var(--muted); font-weight: 700; margin-right: 4px; }
+.chip {
+  background: var(--sand); color: var(--charcoal); border-radius: 999px;
+  padding: 3px 11px; font-size: .85rem; font-weight: 600;
+}
+
 /* ---------- Lightbox ---------- */
 .lightbox {
   position: fixed; inset: 0; z-index: 100;

@@ -16,6 +16,7 @@
 //    notes     free text: what to bring, parking, rain plan... (optional)
 //    cover     one image used as the big picture on the "Next BBQ" card (optional)
 //    photos    list of image paths for the gallery (optional; [] for upcoming)
+//    attendees list of names shown as "Who came" (optional)
 //
 //  Template for an upcoming BBQ (uncomment and edit):
 //  {
@@ -46,6 +47,16 @@ window.BBQ_EVENTS = [
       "photos/2026-09-07-colt-state-park/02-at-the-grill.jpg",
       "photos/2026-09-07-colt-state-park/03-picnic-table.jpg",
       "photos/2026-09-07-colt-state-park/04-sausages.jpg"
+    ],
+    attendees: [
+      "Zhen Zhang",
+      "Shanqing Liu",
+      "Kyriacos Georgiou",
+      "Juan Diego Toscano",
+      "Chenxi Wu",
+      "Jaemin Oh",
+      "Alan John Varghese",
+      "Qile Jiang"
     ]
   }
 ];
