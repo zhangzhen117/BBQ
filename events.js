@@ -16,7 +16,10 @@
 //    notes     free text: what to bring, parking, rain plan... (optional)
 //    cover     one image used as the big picture on the "Next BBQ" card (optional)
 //    photos    list of image paths for the gallery (optional; [] for upcoming)
-//    attendees list of names shown as "Who came" (optional)
+//    attendees list of people shown as "Who came" (optional). Each entry is
+//              either a plain name  "Jaemin Oh"
+//              or a name + link     { name: "Jaemin Oh", url: "https://..." }
+//              which turns that name into a clickable chip.
 //
 //  Template for an upcoming BBQ (uncomment and edit):
 //  {
@@ -49,12 +52,12 @@ window.BBQ_EVENTS = [
       "photos/2026-09-07-colt-state-park/04-sausages.jpg"
     ],
     attendees: [
-      "Zhen Zhang",
+      { name:"Zhen Zhang", url: "https://zhangzhen117.github.io/homepage/"},
       "Shanqing Liu",
-      "Kyriacos Georgiou",
+      { name: "Kyriacos Georgiou", url: "https://sites.google.com/view/kyriakos-c-georgiou"},
       "Juan Diego Toscano",
       "Chenxi Wu",
-      "Jaemin Oh",
+      { name: "Jaemin Oh", url: "https://jaeminoh.github.io" },
       "Alan John Varghese",
       "Qile Jiang"
     ]
