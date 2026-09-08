@@ -169,6 +169,9 @@ a { color: var(--flame-dark); }
   background: var(--sand); color: var(--charcoal); border-radius: 999px;
   padding: 3px 11px; font-size: .85rem; font-weight: 600;
 }
+/* A chip that is a link: same pill, but shows it is clickable on hover. */
+.chip-link { text-decoration: none; transition: background .15s, color .15s; }
+.chip-link:hover, .chip-link:focus-visible { background: var(--flame); color: #fff; }
 
 /* ---------- Lightbox ---------- */
 .lightbox {

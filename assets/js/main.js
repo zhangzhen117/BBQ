@@ -13,8 +13,19 @@
   const fmtTime = (d) => d.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const icsStamp = (d) => d.getUTCFullYear() + pad(d.getUTCMonth() + 1) + pad(d.getUTCDate()) + "T" + pad(d.getUTCHours()) + pad(d.getUTCMinutes()) + "00Z";
+  // One attendee -> one pill. An entry is either a plain string ("Jaemin Oh")
+  // or an object with a link ({ name: "Jaemin Oh", url: "https://..." }).
+  // With a url it becomes a clickable <a>, otherwise the same plain <span> as before.
+  const chip = (a) => {
+    const name = esc(typeof a === "string" ? a : a.name);
+    const url = typeof a === "string" ? "" : a.url;   // no url for plain-string entries
+    return url
+      // target/rel: open in a new tab without handing the new page control of ours
+      ? `<a class="chip chip-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${name}</a>`
+      : `<span class="chip">${name}</span>`;
+  };
   const people = (ev) => (ev.attendees && ev.attendees.length)
-    ? `<p class="people"><span class="people-label">Who came:</span> ${ev.attendees.map((n) => `<span class="chip">${esc(n)}</span>`).join("")}</p>` : "";
+    ? `<p class="people"><span class="people-label">Who came:</span> ${ev.attendees.map(chip).join("")}</p>` : "";
   const endOf = (ev) => ev.end ? parse(ev.end) : new Date(parse(ev.start).getTime() + 4 * 3600 * 1000);
 
   function googleCalUrl(ev) {
