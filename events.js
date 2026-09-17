@@ -34,6 +34,33 @@
 
 window.BBQ_EVENTS = [
   {
+    id: "2026-09-16-colt-state-park",
+    title: "Colt State Park BBQ — September 2026",
+    start: "2026-09-16T16:00",
+    end: "2026-09-16T19:30",
+    location: "Colt State Park, Bristol, RI",
+    mapUrl: "https://maps.google.com/?q=Colt+State+Park+Bristol+RI",
+    notes: "Back at Colt State Park, this time at site 4. Skewers over a wood fire, and we stayed for the sunset over Narragansett Bay.",
+    cover: "photos/2026-09-16-colt-state-park/01-site-4-crew.jpg",
+    photos: [
+      "photos/2026-09-16-colt-state-park/01-site-4-crew.jpg",
+      "photos/2026-09-16-colt-state-park/02-plates-up.jpg",
+      "photos/2026-09-16-colt-state-park/03-skewer-prep.jpg",
+      "photos/2026-09-16-colt-state-park/04-skewers-on-the-fire.jpg",
+      "photos/2026-09-16-colt-state-park/05-sunset-over-the-bay.jpg"
+    ],
+    attendees: [
+      "Alan John Varghese",
+      "Filippo Sturiale",
+      "Han Zhang",
+      "Kyriacos Georgiou",
+      "Qixuan Wang",
+      "Shanqing Liu",
+      "Stefano Montemagno",
+      "Zhen Zhang"
+    ]
+  },
+  {
     id: "2026-09-07-colt-state-park",
     title: "Labor Day BBQ 2026",
     start: "2026-09-07T12:00",
