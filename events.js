@@ -76,14 +76,14 @@ window.BBQ_EVENTS = [
       "photos/2026-09-07-colt-state-park/04-sausages.jpg"
     ],
     attendees: [
-      "Zhen Zhang",
-      "Shanqing Liu",
-      "Kyriacos Georgiou",
-      "Juan Diego Toscano",
+      "Alan John Varghese",
       "Chenxi Wu",
       "Jaemin Oh",
-      "Alan John Varghese",
-      "Qile Jiang"
+      "Juan Diego Toscano",
+      "Kyriacos Georgiou",
+      "Qile Jiang",
+      "Shanqing Liu",
+      "Zhen Zhang"
     ]
   }
 ];
