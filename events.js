@@ -34,6 +34,36 @@
 
 window.BBQ_EVENTS = [
   {
+    id: "2026-11-01-colt-state-park",
+    title: "Colt State Park BBQ — November 2026",
+    start: "2026-11-01T12:00",
+    end: "2026-11-01T16:00",
+    location: "Colt State Park, Bristol, RI",
+    mapUrl: "https://maps.google.com/?q=Colt+State+Park+Bristol+RI",
+    notes: "An autumn BBQ at site 2, with fall leaves and clear blue skies over Narragansett Bay. Steak, ribs and a wood fire.",
+    cover: "photos/2026-11-01-colt-state-park/04-site-2-by-the-bay.jpg",
+    photos: [
+      "photos/2026-11-01-colt-state-park/01-lighting-the-fire.jpg",
+      "photos/2026-11-01-colt-state-park/02-tending-the-fire.jpg",
+      "photos/2026-11-01-colt-state-park/03-at-the-grill.jpg",
+      "photos/2026-11-01-colt-state-park/04-site-2-by-the-bay.jpg",
+      "photos/2026-11-01-colt-state-park/05-steak-on-the-grill.jpg",
+      "photos/2026-11-01-colt-state-park/06-ribs.jpg",
+      "photos/2026-11-01-colt-state-park/07-chopsticks.jpg",
+      "photos/2026-11-01-colt-state-park/08-autumn-on-the-bay.jpg",
+      "photos/2026-11-01-colt-state-park/09-fall-colors.jpg"
+    ],
+    attendees: [
+      "Alan John Varghese",
+      "Filippo Sturiale",
+      "Qile Jiang",
+      "Qixuan Wang",
+      "Shanqing Liu",
+      "Stefano Montemagno",
+      "Zhen Zhang"
+    ]
+  },
+  {
     id: "2026-09-16-colt-state-park",
     title: "Colt State Park BBQ — September 2026",
     start: "2026-09-16T16:00",
