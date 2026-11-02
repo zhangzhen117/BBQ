@@ -37,7 +37,7 @@ window.BBQ_EVENTS = [
     id: "2026-11-01-colt-state-park",
     title: "Colt State Park BBQ — November 2026",
     start: "2026-11-01T12:00",
-    end: "2026-11-01T16:00",
+    end: "2026-11-01T15:00",
     location: "Colt State Park, Bristol, RI",
     mapUrl: "https://maps.google.com/?q=Colt+State+Park+Bristol+RI",
     notes: "An autumn BBQ at site 2, with fall leaves and clear blue skies over Narragansett Bay. Steak, ribs and a wood fire.",
